@@ -1,0 +1,18 @@
+.search-button {
+    background-color: #00fefc;
+    color: #020100;
+    border-radius: 3px;
+    padding: 14px 20px 30px 20px;
+    width: 80px;
+    height: 8px;
+    position: relative;
+    top: 30px;
+    
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+
+}
+.search-button:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.table-row-tracklist {
+    height: 50px;
+}
+
+.table-row-tracklist td {
+    height: 30px;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 20px;
+
+}
+.table-row-tracklist td:nth-child(n+3) {
+    border-bottom: 1px solid #1c1c1c; 
+    padding-left:20px;
+}

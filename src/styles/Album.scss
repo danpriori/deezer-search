@@ -1,0 +1,16 @@
+.album-list-content {
+    width: 285px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 10px 1px 10px;
+    flex-grow: 1;
+    .album-list-thumb {
+        img {
+            width: 285px;
+            height: 285px;
+        }
+        :hover {
+            cursor: pointer;
+        }
+    }
+}

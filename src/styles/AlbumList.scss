@@ -1,0 +1,43 @@
+.album-list-container {
+    max-height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.album-list-scroll {
+    height: 300px; 
+    max-height: 300px; 
+    color: white; 
+}
+
+.album-list-search {
+    color: white;
+    border-bottom: 1px solid #232323;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.album-list-title {
+    color: #00fefc;
+    margin-bottom: 10px;
+    padding-top: 1px;
+    padding-left: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.album-list-header-title {
+    color: #00fefc;
+    margin-top: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 3px;
+
+}
+
+.track-horizontal {
+    background-color: white;
+}
