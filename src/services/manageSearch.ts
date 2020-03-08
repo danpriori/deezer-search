@@ -49,8 +49,6 @@ export function cleanAlbumDetailsResult() {
     setAlbumSelectedDetailsState(null);
 }
 
-
-
 export function getArtistFromListById(id:number, list: Array<any>) {
     return list.filter(artist => artist.id === id);
 }
@@ -78,7 +76,6 @@ export function setCurrentArtistSelected(id: number) {
 export function setCurrentAlbumSelected(id: number | null) {
     setCurrentAlbumSelectedIdState(id);
 }
-
 
 export function searchArtists(search: string) {
     cleanSearchInput();
