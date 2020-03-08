@@ -1,3 +1,6 @@
+## Live Demo
+[Demo](https://deezer-search--danpriori.repl.co/)
+
 ## Available Scripts
 
 In the project directory, you can run:
