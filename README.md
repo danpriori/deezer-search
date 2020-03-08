@@ -1,3 +1,7 @@
+Small project to retrieve data from Deezer API such as Artists and Albums, parse it and show the content 
+
+- Using React, Redux with Typescript
+
 ## Live Demo
 [Demo](https://deezer-search--danpriori.repl.co/)
 
