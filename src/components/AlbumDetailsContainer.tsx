@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import IState from '../interface/state';
+import ITrack from '../interface/track';
 
 import Track from './Track';
 import '../styles/AlbumDetails.scss';
@@ -20,7 +21,7 @@ class AlbumDetailsContainer extends Component<IState> {
             && albumDetails.tracks 
             && albumDetails.tracks.data 
             && albumDetails.tracks.data.length > 0) {
-            albumDetails.tracks.data.forEach((track: any, index: number) => {
+            albumDetails.tracks.data.forEach((track: ITrack, index: number) => {
                 rows.push(
                     <Track
                         release_date={albumDetails.release_date} track={track} key={index} index={index}
