@@ -56,14 +56,20 @@ class AutocompleteField extends Component<IState> {
             if (currentSelectionIndex === 0) {
                 return;
             }
+            let newIndex = currentSelectionIndex - 1;
+            artist = getArtistFromArtistListByIndex(newIndex, artistList)[0];
+            setSearchInput(artist.name);
 
-            setCurrentSelectionIndex(currentSelectionIndex - 1);
+            setCurrentSelectionIndex(newIndex);
         }
 
         else if (e.keyCode === 40) {
             if (currentSelectionIndex - 1 === artistList.length) {
                 return;
             }
+            let newIndex = currentSelectionIndex + 1;
+            artist = getArtistFromArtistListByIndex(newIndex, artistList)[0];
+            setSearchInput(artist.name);
 
             setCurrentSelectionIndex(currentSelectionIndex + 1);
         }

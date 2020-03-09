@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import IState from '../interface/state';
 
 import '../styles/SearchButton.scss';
-import { searchAlbums, getCurrentArtistSelected } from "../services/manageSearch";
+import { searchAlbums, getCurrentSelectionIndex, getArtistFromArtistListByIndex, getArtistListResult } from "../services/manageSearch";
 
 class SearchButton extends Component {
     
@@ -13,8 +13,10 @@ class SearchButton extends Component {
     
     handleSubmission = (e: any) => {
         e.preventDefault();
-        const artistId = getCurrentArtistSelected();
-        searchAlbums(artistId);
+        const artistList = getArtistListResult();
+        const currentIndex = getCurrentSelectionIndex();
+        const artist = getArtistFromArtistListByIndex(currentIndex,artistList)[0];
+        searchAlbums(artist.id);
     }
 
     render() {
