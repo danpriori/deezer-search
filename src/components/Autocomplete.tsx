@@ -21,7 +21,7 @@ import {
     getArtistFromArtistListByIndex
 } from '../services/manageSearch';
 
-class AutocompleteField extends Component<IState> {
+class Autocomplete extends Component<IState> {
 
     static contextTypes: { store: PropTypes.Requireable<object>; };
 
@@ -156,10 +156,10 @@ const mapStateToProps = (state: IState) => {
 }
 
 
-AutocompleteField.contextTypes = {
+Autocomplete.contextTypes = {
     store: PropTypes.object
 };
 export default connect(
     mapStateToProps,
     undefined
-)(AutocompleteField);
+)(Autocomplete);

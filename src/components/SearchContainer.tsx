@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import AutocompleteField from './AutocompleteField';
+import Autocomplete from './Autocomplete';
 import SearchButton from './SearchButton';
 
 export default class SearchContainer extends Component {
@@ -8,7 +8,7 @@ export default class SearchContainer extends Component {
         
         return (
             <div className="search-container">
-                <AutocompleteField></AutocompleteField>
+                <Autocomplete></Autocomplete>
                 <SearchButton></SearchButton>
             </div>
         );
